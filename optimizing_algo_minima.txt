@@ -1,0 +1,32 @@
+Conjugate Gradient ('CG'):
+The Conjugate Gradient method is an iterative optimization algorithm that works well for large-scale unconstrained optimization problems. It is an extension of the steepest descent method but incorporates the idea of conjugate directions to speed up convergence. This method is useful for optimizing smooth functions without any constraints.
+
+Broyden-Fletcher-Goldfarb-Shanno ('BFGS'):
+BFGS is a popular quasi-Newton optimization algorithm that aims to find the minimum of a function without using the exact Hessian matrix. Instead, it approximates the Hessian matrix based on gradient information and updates it iteratively. BFGS is suitable for unconstrained optimization of smooth functions and can handle moderate-sized problems efficiently.
+
+Newton-Conjugate Gradient ('Newton-CG'):
+The Newton-CG method combines the Newton's method for optimization with the Conjugate Gradient algorithm. It approximates the Hessian matrix using the Conjugate Gradient approach and uses it to find the search direction. Newton-CG is useful for optimizing smooth functions and can handle large-scale unconstrained problems.
+
+Limited-memory Broyden-Fletcher-Goldfarb-Shanno ('L-BFGS-B'):
+L-BFGS-B is a variant of the BFGS algorithm but specifically designed for optimization problems with bound constraints. It can handle problems where some or all variables have upper and lower bounds. L-BFGS-B is efficient for large-scale problems with bound constraints.
+
+Truncated Newton-Conjugate Gradient ('TNC'):
+TNC is a variant of the Newton-CG method that is well-suited for constrained optimization problems. It can handle both bound and linear constraints. TNC is designed to work efficiently for problems with a mixture of bound and linear constraints.
+
+Constrained Optimization BY Linear Approximations ('COBYLA'):
+COBYLA is a derivative-free optimization algorithm used for problems with nonlinear constraints. It does not require the gradient information of the objective function but instead approximates the function using linear constraints. COBYLA can handle problems with bound and linear constraints efficiently.
+
+Sequential Least SQuares Programming ('SLSQP'):
+SLSQP is a sequential quadratic programming algorithm that efficiently solves constrained optimization problems. It can handle problems with both equality and inequality constraints. SLSQP is a popular choice for problems with a mixture of bound, linear, and nonlinear constraints.
+
+When choosing an optimization algorithm, it is essential to consider the characteristics of the objective function, the presence of constraints, the dimensionality of the problem, and the required computational resources. Different algorithms may perform better or worse depending on the specific problem at hand.
+
+
+Dijkstra: Use the dijkstra method to find the shortest path in a graph from one element to another.
+takes following argument:
+
+a.return_predecessors: boolean (True to return whole path of traversal otherwise False).
+b. indices: index of the element to return all paths from that element only.
+c.limit: max weight of path.
+
+
