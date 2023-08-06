@@ -69,6 +69,7 @@ print(result_pval)
 #KS test
 v = np.random.normal(size = 100)
 res = kstest(v,'norm')
+
 print(res)
 
 print('Statistical  Description', describe(v))  #showing statistical description
